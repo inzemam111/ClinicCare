@@ -1,0 +1,11 @@
+node_modules/
+.pnpm-store/
+dist/
+.next/
+.expo/
+coverage/
+*.log
+.env
+.env.local
+!.env.example
+backend/prisma/dev.db

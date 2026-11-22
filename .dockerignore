@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.git
+.next
+.expo
+node_modules
+**/node_modules
+**/dist
+.pnpm-store
+coverage
+npm-debug.log*
+pnpm-debug.log*

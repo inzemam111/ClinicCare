@@ -1,0 +1,29 @@
+{
+  "name": "cliniccare",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @cliniccare/admin-web --filter @cliniccare/doctor-app --filter @cliniccare/patient-app --filter @cliniccare/backend dev",
+    "dev:backend": "pnpm --filter @cliniccare/backend dev",
+    "dev:doctor": "pnpm --filter @cliniccare/doctor-app start",
+    "dev:patient": "pnpm --filter @cliniccare/patient-app start",
+    "dev:admin": "pnpm --filter @cliniccare/admin-web dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write .",
+    "services:up": "docker compose up -d postgres redis",
+    "services:down": "docker compose down",
+    "docker:up": "docker compose up --build -d",
+    "docker:down": "docker compose down"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
