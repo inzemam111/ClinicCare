@@ -25,7 +25,6 @@ ALTER TABLE "Prescription"
 
 CREATE UNIQUE INDEX "Prescription_prescriptionNumber_key" ON "Prescription"("prescriptionNumber");
 CREATE UNIQUE INDEX "Prescription_verificationCode_key" ON "Prescription"("verificationCode");
-CREATE INDEX "Prescription_clinicId_patientId_issuedAt_idx" ON "Prescription"("clinicId", "patientId", "issuedAt");
 
 ALTER TABLE "Prescription"
   ADD CONSTRAINT "Prescription_previousVersionId_fkey"

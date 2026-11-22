@@ -8,6 +8,7 @@ WORKDIR /workspace
 COPY . .
 
 RUN pnpm install --frozen-lockfile \
+    && pnpm --filter @cliniccare/shared-types build \
     && pnpm --filter @cliniccare/backend db:generate \
     && pnpm --filter @cliniccare/backend build
 

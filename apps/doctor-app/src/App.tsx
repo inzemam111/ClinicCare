@@ -4822,17 +4822,17 @@ export default function App() {
       ) : screen === 'onboarding' ? (
         <Onboarding />
       ) : screen === 'login' ? (
-        <Login />
+        Login()
       ) : screen === 'register' ? (
-        <Register />
+        Register()
       ) : screen === 'otp' ? (
-        <Otp />
+        Otp()
       ) : screen === 'verification' ? (
-        <Verification />
+        Verification()
       ) : screen === 'profileSetup' ? (
-        <ProfileSetup />
+        ProfileSetup()
       ) : screen === 'clinicSetup' ? (
-        <ClinicSetup />
+        ClinicSetup()
       ) : screen === 'dashboard' ? (
         <>
           {isReceptionist ? <ReceptionDashboardScreen /> : <DashboardScreen />}
